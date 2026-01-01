@@ -20,7 +20,6 @@ import java.util.UUID;
 @Table(name="users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
 
     @Column(unique = true)
